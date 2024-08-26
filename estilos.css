@@ -1,0 +1,484 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Navbar */
+.bg-light {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  position: static !important;
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+  font-size: 16px;
+}
+.navbar .navbar-nav .nav-item a {
+  position: relative;
+  font-size: 18px;
+}
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: -10 auto;
+  content: "";
+  background-color: #e6ab0a;
+  width: 0%;
+  height: 2px;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+
+/* Fin Navbar */
+
+header {
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    url(img/banner1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+}
+
+header .textos {
+  margin-top: 152px;
+}
+
+header .titulo {
+  font-size: 85px;
+}
+
+header .subtitulo {
+  font-size: 42px;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+header .boton {
+  display: inline-block;
+  padding: 6px;
+  width: 128px;
+  color: #fff;
+  font-size: 19px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px;
+  background-color: #0833a2;
+  transition: all 0.3s !important;
+}
+
+header .boton:hover {
+  top: 3px;
+  background-color: #1049da;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/*sobre nosotros*/
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 52px 0;
+}
+
+/*mision y vision*/
+.mivi {
+  padding: 16px;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 50px;
+}
+.titulo1 {
+  text-align: center;
+  padding-right: 5%;
+  color: #0833a2;
+}
+.p1 {
+  text-align: justify;
+  color: black;
+  font-size: 19px;
+}
+.titulo2 {
+  text-align: center;
+  padding-left: 5%;
+  color: #0833a2;
+  border-left: solid 4px;
+  border-color: #e6ab0a;
+}
+.p2 {
+  color: black;
+  text-align: justify;
+  font-size: 19px;
+}
+/*fin de mision vision*/
+
+/* Main */
+
+.sobre-nosotros {
+  text-align: center;
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #0833a2;
+}
+
+.slogan {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.parrafo {
+  margin-bottom: 13px;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 24px;
+  color: rgb(24, 16, 16);
+}
+
+.acerca-de .boton {
+  display: inline-block;
+  padding: 6px;
+  width: 127px;
+  font-weight: 300;
+  color: rgb(24, 16, 16);
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px;
+  margin-top: 24px;
+  background-color: #0833a2;
+  color: #fff;
+  transition: all 0.3s !important;
+}
+
+.acerca-de .boton:hover {
+  top: 3px;
+  background-color: #1049da;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.sesgoabajo {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 35vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.sesgoarriba {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 35vh 100vw 0 0;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.galeria {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.imagenes {
+  width: 20%;
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+}
+
+.imagenes img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.encima {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 73, 94, 0.815);
+}
+
+.encima h2 {
+  position: relative;
+  top: 45%;
+  text-align: center;
+  color: #fff;
+}
+
+.encima div {
+  position: relative;
+  display: block;
+  top: 46%;
+  width: 40px;
+  height: 5px;
+  background: #fff;
+  margin: auto;
+}
+
+.cards {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 20px 0;
+  width: 30%;
+  height: 290px;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
+}
+
+.cards img {
+  width: 30%;
+  height: 80%;
+  object-fit: cover;
+}
+
+/*clientes*/
+.fondo {
+  height: 900px;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(20, 65, 214, 0.623),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(img/4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 130px;
+}
+
+.titulo-patrocinadores,
+.subtitulo-patrocinadores {
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold !important;
+}
+
+.titulo-patrocinadores {
+  font-size: 56px;
+  margin-top: 48px;
+  color: #e6ab0a;
+}
+
+.subtitulo-patrocinadores {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 64px;
+}
+
+.clientes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.cliente {
+  width: 50%;
+}
+
+.cliente img {
+  width: 100%;
+  border-radius: 150px;
+  box-shadow: 0px 0px 10px 0 rgb(0, 0, 0);
+}
+/*fin de clientes*/
+
+/*footer*/
+
+.pie-pagina {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 10px;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: black;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: black;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #e6ab0a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #000;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+.contador {
+  padding-top: 25px;
+}
+
+/*fin del footer*/
+
+#to_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 900px) {
+  .card {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  header .textos {
+    margin-top: 80px;
+  }
+  header .titulo {
+    font-size: 50px;
+  }
+  .none {
+    display: none;
+  }
+  .imagenes {
+    flex-grow: 1;
+  }
+  .card {
+    width: 90%;
+  }
+  .fondo {
+    height: auto;
+  }
+  .especial {
+    display: none;
+  }
+  .cliente {
+    width: 90%;
+    height: 200px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  header .textos {
+    margin-top: 100px;
+  }
+  header .titulo {
+    font-size: 65px;
+  }
+  header .subtitulo {
+    font-size: 25px;
+    margin-bottom: 32px;
+  }
+  .sobre-nosotros {
+    font-size: 46px;
+  }
+  .slogan {
+    font-size: 20px;
+  }
+  .titulo-patrocinadores {
+    font-size: 46px;
+  }
+  .subtitulo-patrocinadores {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+.red-social img {
+  transition: 0.2s;
+}
+
+.red-social img:hover {
+  transform: scale(1.2);
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+}
